@@ -1,0 +1,11 @@
+#app {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 60px 30px;
+
+ display: flex;
+ flex-direction: row;
+ align-items: flex-start;
+}
+/* mantendo distancis do topo e o aside e main lado lado
+impedindo  de usar a tela inteira com flex star e sempre alinhados ao topo*/
