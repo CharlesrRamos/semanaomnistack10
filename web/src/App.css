@@ -9,3 +9,21 @@
 }
 /* mantendo distancis do topo e o aside e main lado lado
 impedindo  de usar a tela inteira com flex star e sempre alinhados ao topo*/
+
+#app main {
+    margin-left: 30px;
+}
+
+@media (max-width: 1000px) {
+#app {
+    flex-direction: column;
+}
+ #app main {
+     margin-left: 0;
+     margin-top: 30px;
+ }
+
+ #app aside {
+     width: 100%;
+ }
+}
