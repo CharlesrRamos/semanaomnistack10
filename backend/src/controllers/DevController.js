@@ -1,7 +1,7 @@
 const axios = require ('axios');
 const Dev = require('../models/Dev');
 const parseStringAsArray = require ('../utils/parseStringAsArray');
-
+const {findConnections, sendMessage} = require ('../websocket')
 // async significa que pode demorar para responder devido ao github
 //await aguardar finalizar para  devolver a resposta.
 module.exports = {
@@ -48,6 +48,15 @@ module.exports = {
                 techs: techsArray,
                 location,
             });
+
+                // filtros de conexões que estão no maximos a 10km de distancia ou pelo menos tenha a mesma tech filtrada
+
+            const sendSocketMessageTo = findConnections(
+                {latitude, longitude},
+                techsArray,
+            )
+            sendMessage (sendSocketMessageTo, 'new-dev', dev);
+
         };
 
       

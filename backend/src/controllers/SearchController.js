@@ -15,16 +15,16 @@ module.exports = {
                $in: techsArray, // filtros in se o usuario tem as tecnologias dentro do array
            },
 
-           location: {
-               $near: {
-                   $geometry:{
-                       type: 'Point',
-                       coordinates: [longitude, latitude],
+        //    location: {
+        //        $near: {
+        //            $geometry:{
+        //                type: 'Point',
+        //                coordinates: [longitude, latitude],
 
-                   },
-                   $macDistance: 10000,
-               },
-           },
+        //            },
+        //            $maxDistance: 10000,
+        //        },
+        //    },
        });
 
         return response.json({ devs });
