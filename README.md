@@ -1,4 +1,4 @@
-<img src="./static/omnistack.png" align="center"></img>
+
 <h1 align="center">Semana Omnistack 10</h1>
 <p align="center">Projeto <strong>DevRadar</strong> desenvolvido durante a Omnistack da Rocketseat</p>
 
@@ -63,7 +63,6 @@ O App Mobile (React Native) desenvolvido no Dia 4 e aprimorado no Dia 5 com Sock
 Para testar a API do DevRadar, baixe e instale o [Insomnia](https://insomnia.rest/download/) e em seguida clique na Workspace → `Import/Export` →  
 `Import Data` → `From File` → e selecione o arquivo ` 	Insomnia_export.json` deste repositório. Assim que terminar, o resultado ficará assim:  
 
-<img align="center" src="./static/insomnia.png"></img>
 
 ## Licença
 
